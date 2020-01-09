@@ -18,10 +18,10 @@ SET default_tablespace = '';
 SET default_with_oids = true;
 
 --
--- Name: company_26; Type: TABLE; Schema: public; Owner: keiu; Tablespace: 
+-- Name: company_36; Type: TABLE; Schema: public; Owner: keiu; Tablespace:
 --
 
-CREATE TABLE company_26 (
+CREATE TABLE company_36 (
     code character(4) NOT NULL,
     name text NOT NULL,
     address text NOT NULL,
@@ -30,13 +30,13 @@ CREATE TABLE company_26 (
 );
 
 
-ALTER TABLE public.company_26 OWNER TO hk16153;
+ALTER TABLE public.company_36 OWNER TO mk16186;
 
 --
--- Data for Name: company_26; Type: TABLE DATA; Schema: public; Owner: keiu
+-- Data for Name: company_36; Type: TABLE DATA; Schema: public; Owner: keiu
 --
 
-COPY company_26 (code, name, address, phone, labors) FROM stdin;
+COPY company_36 (code, name, address, phone, labors) FROM stdin;
 9006	苫高専ソフト(株)                                            	苫小牧市錦岡443番地                                                             	(0144)-67-8905	300.000000
 9007	苫高専化学(株)                                              	苫小牧市錦岡443番地                                                             	(0144)-67-8906	2000.000000
 9022	苫高専商事(株)                                              	苫小牧市錦岡443番地                                                             	(0144)-67-8907	1000.000000
@@ -159,22 +159,22 @@ COPY company_26 (code, name, address, phone, labors) FROM stdin;
 
 
 --
--- Name: company_26_pkey; Type: CONSTRAINT; Schema: public; Owner: keiu; Tablespace: 
+-- Name: company_36_pkey; Type: CONSTRAINT; Schema: public; Owner: keiu; Tablespace:
 --
 
-ALTER TABLE ONLY company_26
-    ADD CONSTRAINT company_26_pkey PRIMARY KEY (code);
+ALTER TABLE ONLY company_36
+    ADD CONSTRAINT company_36_pkey PRIMARY KEY (code);
 
 
 --
--- Name: company_26; Type: ACL; Schema: public; Owner: keiu
+-- Name: company_36; Type: ACL; Schema: public; Owner: keiu
 --
 
-REVOKE ALL ON TABLE company_26 FROM PUBLIC;
---REVOKE ALL ON TABLE company_26 FROM keiu;
---GRANT ALL ON TABLE company_26 TO keiu;
-GRANT ALL ON TABLE company_26 TO hk16153;
---GRANT ALL ON TABLE company_26 TO ynakamura;
+REVOKE ALL ON TABLE company_36 FROM PUBLIC;
+--REVOKE ALL ON TABLE company_36 FROM keiu;
+--GRANT ALL ON TABLE company_36 TO keiu;
+GRANT ALL ON TABLE company_36 TO mk16186;
+--GRANT ALL ON TABLE company_36 TO ynakamura;
 
 
 --
