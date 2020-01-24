@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>S-2 PHP</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
@@ -40,18 +41,6 @@
   print "</table>\n";
 
   ?>
-
-  <style>
-    table {
-      border-collapse: collapse;
-    }
-
-    td {
-      border: solid 1px;
-      padding: 0.5em;
-    }
-  </style>
-
 </body>
 
 </html>
