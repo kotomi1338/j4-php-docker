@@ -9,23 +9,35 @@
 
 <body>
   <form method="post" action="index.php">
-    <h3>企業名部分一致検索</h3>
-    キーワード:
-    <input type="text" name="keyword">
-    フィールド項目:
-    <select name="item">
-      <option value="code">企業コード</option>
-      <option value="name">企業名</option>
-      <option value="address">所在地</option>
-      <option value="phone">電話番号</option>
-      <option value="labors">従業員数</option>
-    </select>
-    ソート順:
-    <select name="sort">
-      <option value="asc">昇順</option>
-      <option value="desc">降順</option>
-    </select>
-    <input type="submit" name="button" value="検索">
+    <h1>企業名部分一致検索</h1>
+    <span class="item-name">キーワード</span>
+    <div class="text-wrap">
+      <input type="text" name="keyword">
+    </div>
+    <div class="box">
+      <span class="item-name">フィールド項目</span>
+      <div class="select-wrap">
+        <select name="item">
+          <option value="code">企業コード</option>
+          <option value="name">企業名</option>
+          <option value="address">所在地</option>
+          <option value="phone">電話番号</option>
+          <option value="labors">従業員数</option>
+        </select>
+      </div>
+    </div>
+    <div class="box">
+      <span class="item-name">ソート順</span>
+      <div class="select-wrap">
+        <select name="sort">
+          <option value="asc">昇順</option>
+          <option value="desc">降順</option>
+        </select>
+      </div>
+    </div>
+    <div class="submit-wrap">
+      <input type="submit" name="" value="送信">
+    </div>
   </form>
   <br>
 
@@ -74,12 +86,14 @@
         break;
     }
 
-    echo "検索キーワード: " . $keyword . "<br>";
-    echo $item_word . "<br>";
-    echo $sort_word . "<br>";
-    echo "検索件数: " . htmlspecialchars(count($company), ENT_QUOTES, 'UTF-8') . "件\n<br>\n";
+    echo "<p>検索キーワード: " . $keyword . "</p><br>";
+    echo "<p>フィールド項目: " . $item_word . "</p><br>";
+    echo "<p>ソート順:      " . $sort_word . "</p><br>";
+    echo "<p>検索件数:      " . htmlspecialchars(count($company), ENT_QUOTES, 'UTF-8') . "件</p><br>";
 
-    if (count($company) != 0) {
+    if (count($company) == 0) {
+      echo "<h3>検索結果に該当する企業はありませんでした</h3>";
+    } else if (count($company) != 0) {
       echo "<table>\n";
       echo "<tr>\n";
       echo "<th>企業コード</th>";
@@ -104,7 +118,7 @@
     }
     echo "</table>\n";
   } else {
-    echo "キーワードを入力してね！";
+    echo "<h3>キーワードを入力して検索してください</h3>";
   }
 
   ?>
