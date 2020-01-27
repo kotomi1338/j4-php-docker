@@ -110,7 +110,7 @@
         echo "<td>" . htmlspecialchars($row->get_name(), ENT_QUOTES, 'UTF-8') . "</td>\n";
         echo "<td>" . htmlspecialchars($row->get_address(), ENT_QUOTES, 'UTF-8') . "</td>\n";
         echo "<td>" . htmlspecialchars($row->get_phone(), ENT_QUOTES, 'UTF-8') . "</td>\n";
-        echo "<td class=labors_right>" . htmlspecialchars(number_format($row->get_labors()), ENT_QUOTES, 'UTF-8') . "</td>\n";
+        echo "<td align=\"right\">" . htmlspecialchars(number_format($row->get_labors()), ENT_QUOTES, 'UTF-8') . "</td>\n";
         echo "</tr>\n";
       }
       echo "
