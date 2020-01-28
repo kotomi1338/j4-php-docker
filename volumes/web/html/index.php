@@ -101,11 +101,9 @@
       echo "<th>所在地</th>";
       echo "<th>電話番号</th>";
       echo "<th>従業員数</th>\n";
-      echo "
-    <tr>\n";
+      echo "</tr>\n";
       foreach ($company as $row) {
-        echo "
-    <tr>\n";
+        echo "<tr>\n";
         echo "<td>" . htmlspecialchars($row->get_code(), ENT_QUOTES, 'UTF-8') . "</td>\n";
         echo "<td>" . htmlspecialchars($row->get_name(), ENT_QUOTES, 'UTF-8') . "</td>\n";
         echo "<td>" . htmlspecialchars($row->get_address(), ENT_QUOTES, 'UTF-8') . "</td>\n";
