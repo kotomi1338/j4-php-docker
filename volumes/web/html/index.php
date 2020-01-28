@@ -10,12 +10,12 @@
 <body>
   <form method="post" action="index.php">
     <h1>企業名部分一致検索</h1>
-    <span class="item-name">キーワード</span>
+    キーワード
     <div class="text-wrap">
       <input type="text" name="keyword">
     </div>
     <div class="box">
-      <span class="item-name">フィールド項目</span>
+      フィールド項目
       <div class="select-wrap">
         <select name="item">
           <option value="code">企業コード</option>
@@ -27,7 +27,7 @@
       </div>
     </div>
     <div class="box">
-      <span class="item-name">ソート順</span>
+      ソート順
       <div class="select-wrap">
         <select name="sort">
           <option value="asc">昇順</option>
