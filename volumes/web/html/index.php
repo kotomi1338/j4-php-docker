@@ -113,9 +113,8 @@
         echo "<td align=\"right\">" . htmlspecialchars(number_format($row->get_labors()), ENT_QUOTES, 'UTF-8') . "</td>\n";
         echo "</tr>\n";
       }
-      echo "
-  </table>\n";
-    echo "</table>\n";
+      echo "</table>\n";
+    }
   } else {
     echo "<h3>キーワードを入力して検索してください</h3>";
   }
