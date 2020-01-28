@@ -1,0 +1,99 @@
+     1  h1 {
+     2    color: #6594e0;
+     3    border-bottom: dashed 2px #6594e0;
+     4  }
+     5
+     6  body {
+     7    margin: 20px 200px 50px;
+     8  }
+     9
+    10  p {
+    11    padding-left: 3px;
+    12    border-left: 6px solid #ccc;
+    13    margin: 0;
+    14  }
+    15
+    16  table {
+    17    border-collapse: collapse;
+    18    margin: 0 auto;
+    19  }
+    20
+    21  td,
+    22  th {
+    23    padding: 10px;
+    24  }
+    25
+    26  th {
+    27    color: #fff;
+    28    background: #005ab3;
+    29  }
+    30
+    31  table tr:nth-child(odd) {
+    32    background: #e6f2ff;
+    33  }
+    34
+    35  input[type='text'] {
+    36    width: 100%;
+    37    max-width: 400px;
+    38    padding: 5px;
+    39    border-radius: 5px;
+    40    border: 1px solid #ccc;
+    41    appearance: none;
+    42    -webkit-appearance: none;
+    43    -moz-appearance: none;
+    44    font-size: 100%;
+    45  }
+    46
+    47  .select-wrap {
+    48    position: relative;
+    49    width: 100%;
+    50    max-width: 250px;
+    51  }
+    52
+    53  .select-wrap:before {
+    54    position: absolute;
+    55    right: 15px;
+    56    top: 50%;
+    57    transform: translateY(-50%) translateX(0);
+    58    content: '';
+    59    width: 15px;
+    60    height: 15px;
+    61    background: url(../img/select.png) no-repeat;
+    62    background-size: contain;
+    63  }
+    64
+    65  .select-wrap select {
+    66    width: 100%;
+    67    outline: none;
+    68    appearance: none;
+    69    -webkit-appearance: none;
+    70    -moz-appearance: none;
+    71    height: 40px;
+    72    padding: 5px;
+    73    border: 1px solid #ccc;
+    74    background-color: #fff;
+    75    border-radius: 5px;
+    76    font-size: 100%;
+    77  }
+    78
+    79  .select-wrap select::-ms-expand {
+    80    display: none;
+    81  }
+    82
+    83  input[type='submit'] {
+    84    border: none;
+    85    display: block;
+    86    width: 100%;
+    87    max-width: 300px;
+    88    padding: 10px;
+    89    border-radius: 5px;
+    90    background-color: #333;
+    91    color: #fff;
+    92    font-weight: bold;
+    93    appearance: none;
+    94    -webkit-appearance: none;
+    95    -moz-appearance: none;
+    96    cursor: pointer;
+    97    margin: 0 auto;
+    98    font-size: 100%;
+    99  }

@@ -8,6 +8,7 @@ body {
 }
 
 p {
+  padding-left: 10px;
   border-left: 6px solid #ccc;
   margin: 0;
 }
