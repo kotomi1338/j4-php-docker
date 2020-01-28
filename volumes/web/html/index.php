@@ -115,7 +115,6 @@
       }
       echo "
   </table>\n";
-    }
     echo "</table>\n";
   } else {
     echo "<h3>キーワードを入力して検索してください</h3>";
